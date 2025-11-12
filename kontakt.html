@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktformular</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://use.typekit.net/euo2iqr.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+
+    <main class="kontaktform">
+        <h1>Kontakt os</h1>
+        <p class="kontakt-intro">Har du noget på hjertet? Her har du nogen at tale med, vi lytter uanset hvad.</p>
+        <h2>Send en besked</h2>
+        <form>
+            <label for="navn">Navn</label> <!--'for' knyttes til <input> med id af samme navn -->
+			<input id="navn" type="text" required>
+            
+            <label for="mail">E-mail</label>
+			<input id="mail" type="email" required>
+
+            <label for="besked">Besked</label>
+			<textarea name="besked" id="besked" rows="8" cols="60"></textarea> <!--Textarea giver mulighed for at skrive en større besked. Størrelse defineres ved brug af rows og cols-->
+        </form>
+
+        <input type="submit" name="submit" value="Send">
+
+        <h3>Ring til os</h3>
+        <p class="kontakt-telefon"> Telefon: +45 11 22 33 44
+            Akuttelefon: +45 11 22 33 44 
+            Åbningstider:
+            Man-Fre: 08:00-20:00
+            Lør: 10:00-16:00
+            Søn: 10:00-14:00
+            Bemærkning: Akuttelefonen er altid åben</p>
+
+    </main>
+    
+</body>
+</html>
