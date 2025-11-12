@@ -1,5 +1,5 @@
 *
-/*Alle sider*/
+/*Alle sider - Mobile*/
 body{
     background-color: #EDFCFF;
     text-align: center;
@@ -11,14 +11,38 @@ body{
 h2,h3,h4 { 
     font-size: 1.7em;
     margin-top: 1em;
-    margin-bottom: 1em;}
+    margin-bottom: 1em;
+    font-family: avenir-next-world, sans-serif;
+    font-weight: 700;
+    font-style: normal;}
 
-/*Kontakt os side*/
+h1 { 
+    font-family: brother-1816-printed, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 3px;}
+
+input[type=submit] {
+    background-color: #003B49;
+    color: #EDFCFF;
+    border: none;
+    font-family: brother-1816-printed, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 3px;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 0.2em 1.5em;
+    font-size: 1.5em;}
+
+input[type=submit]:hover {
+    background-color: #011317;}
+    
+
+/*Kontakt os side - Mobile*/
 form {
     text-align: left;
 }
-    
-
     
 
 /*Kontaktform*/
