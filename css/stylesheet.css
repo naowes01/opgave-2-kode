@@ -172,3 +172,105 @@ p.bemærkning {
     margin-top: 0em;
     font-weight: bold;
     font-style: italic;}
+
+/*Alle sider - Tablets og op*/
+@media screen and (min-width: 768px){
+
+/* Header og nav */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+    background-color: #003B49;
+    min-height: 80px;
+    width: 100%;
+    box-sizing: border-box;}
+
+
+.logo-elements {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    flex-shrink: 0;}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    text-decoration: none;
+    color: #D7F7FF;}
+
+.logo-link img {
+    max-height: 40px;
+    width: auto;}
+
+.logo-link h1 {
+    font-family: "brother-1816", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 1.5em; 
+    margin: 0;
+    white-space: nowrap; }
+
+nav {
+    display: flex !important;      /* sikrer at det vises */
+    justify-content: flex-end;
+    flex-grow: 1;
+    min-width: 0;                 
+    background: transparent;}
+
+nav ul {
+    display: flex !important;
+    flex-wrap: nowrap;           
+    gap: 1.5em;                    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: visible;}
+
+nav li {
+    margin: 0;
+    padding: 0;}
+
+nav li a {
+    color: #D7F7FF;
+    font-size: 1em;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap; 
+    display: block;}
+
+nav li a:hover {
+    color: #ffffff;}
+
+
+button#bars {
+    display: none;}
+
+
+/* Main */
+
+.send-besked input[type="submit"] {
+    width: auto;
+    padding: 0.2em 1.5em;}
+
+.send-besked input,
+.send-besked textarea {
+    width: 100%;
+    box-sizing: border-box;}
+
+.kontakt-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    padding: 3em 6em;}
+
+.send-besked, .kontakt-info {
+        flex: 1;
+        min-width: 0;
+        border: 2px solid #003B49;
+        border-radius: 10px;
+        padding-bottom: 1em;
+        padding-top: 0em;}
+}
