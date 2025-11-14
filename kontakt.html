@@ -14,11 +14,21 @@
 
 <body>
     <header>
+        <div class="header-elements">
+        
+        <div class="logo-elements">
+        <a href="index.html" class="logo-link">
+        <img src="img/logo.png" alt="boytalk-logo">
+        <h1>BOYTALK</h1>
+        </a>
+        </div>
+
         <button id="bars" aria-label="Åbn menu">
         <i class="fa-solid fa-bars"></i>
         </button>
+        </div>
 
-         <nav>
+        <nav>
         <ul>
         <li><a href="underside.html">Om Boytalk</a></li>
         <li><a href="kontakt.html">Snak med os</a></li>
@@ -33,21 +43,22 @@
     <main class="kontaktform">
         <h2>Kontakt os</h2>
         <p> Har du noget på hjertet? <br>Her har du nogen at tale med, vi lytter uanset hvad.</p>
-        <h3>Send en besked</h3>
-        <form>
-            <label for="navn">Navn</label> <!--'for' knyttes til <input> med id af samme navn -->
-			<input id="navn" type="text" required autocomplete="name">
-            
-            <label for="mail">E-mail</label>
-			<input id="mail" type="email" required autocomplete="name">
+        <h3 class="message-header">Send en besked</h3>
 
-            <label for="besked">Besked</label>
-			<textarea name="besked" id="besked" rows="8" cols="60"></textarea> <!--Textarea giver mulighed for at skrive en større besked. Størrelse defineres ved brug af rows og cols-->
+        <form>
+            <label for="navn" class="hide">Navn</label> <!--'for' knyttes til <input> med id af samme navn -->
+			<input id="navn" type="text" required autocomplete="name" placeholder="Navn">
+            
+            <label for="mail" class="hide">E-mail</label>
+			<input id="mail" type="email" required autocomplete="name" placeholder="E-mail">
+
+            <label for="besked" class="hide">Besked</label>
+			<textarea name="besked" id="besked" rows="8" cols="60" placeholder="Besked"></textarea> <!--Textarea giver mulighed for at skrive en større besked. Størrelse defineres ved brug af rows og cols-->
         </form>
 
         <input type="submit" name="submit" value="SEND">
 
-        <h4>Ring til os</h4>
+        <h4 class="ring-header">Ring til os</h4>
         <p class="telefonnummer"> Telefon: +45 11 22 33 44 
             <br>Akuttelefon: +45 11 22 33 44 </p>
 
