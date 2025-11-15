@@ -102,7 +102,7 @@ h2 {
     margin-bottom: 0;}
 
 
-h3,h4,h5 { 
+h3,h4,h5,h6,h7 { 
     font-size: 2em;
     margin-bottom: 0em;
     font-family: avenir-next-world, sans-serif;
@@ -136,7 +136,56 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #011317;}
 
-    
+/*Footer styling */ 
+footer {
+    background-color: #003B49;
+    color: #D7F7FF;
+    padding: 0.5em;
+    font-family: avenir-next-world, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8em;}
+
+footer .footer-header {
+   font-size: 2em; 
+   margin: 1em 0 0.5em 0; }
+
+.note {
+    font-style: italic;}
+
+.footer-logo p {
+    font-family: "brother-1816", sans-serif;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-top: 0.2em;} 
+.footer-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em; }
+
+.footer-section {
+    flex: 1;
+    text-align: left; padding-left: 2em; }
+
+.footer-logo img {
+    max-width: 30px;}
+
+.logo-instagram {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;}
+
+.logo-facebook {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;}
+
+.footer-some {
+ display: flex;       
+    gap: 1em;            
+    align-items: center; 
+    justify-content: flex-start;} 
+
 
 /*Kontakt os side - Mobile*/
 /*Kontaktform*/
@@ -248,9 +297,19 @@ nav li a:hover {
 button#bars {
     display: none;}
 
+/* Footer */
+.footer-content {
+        display: flex;                
+        justify-content: center;     
+        align-items: flex-start;     
+        gap: 15em;                 
+        margin-bottom: 4em;}
 
-/* Main */
+.footer-section {
+        flex: none;          
+        text-align: left;}
 
+/* Kontakt os - Main  */
 .send-besked input[type="submit"] {
     width: auto;
     padding: 0.2em 1.5em;}
