@@ -102,8 +102,15 @@ h2 {
     margin-bottom: 0;}
 
 
-h3,h4,h5,h6,h7 { 
+h3{ 
     font-size: 2em;
+    margin-bottom: 0em;
+    font-family: avenir-next-world, sans-serif;
+    font-weight: 700;
+    font-style: normal;}
+
+h4{ 
+    font-size: 1.8em;
     margin-bottom: 0em;
     font-family: avenir-next-world, sans-serif;
     font-weight: 700;
@@ -137,6 +144,7 @@ input[type=submit]:hover {
     background-color: #011317;}
 
 /*Footer styling */ 
+
 footer {
     background-color: #003B49;
     color: #D7F7FF;
@@ -147,7 +155,6 @@ footer {
     font-size: 0.8em;}
 
 footer .footer-header {
-   font-size: 2em; 
    margin: 1em 0 0.5em 0; }
 
 .note {
