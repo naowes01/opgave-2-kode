@@ -44,11 +44,11 @@ nav li a{
     padding-left: 1em;
     border-bottom: 2px solid #003B49;}
 
-h1 {
+.header-elements p {
     font-family: "brother-1816", sans-serif;
     font-weight: 900;
     font-style: italic;
-    font-size: 1.7em;}
+    font-size: 0.5em;}
 
 header img {
     max-height: 40px;
@@ -93,7 +93,7 @@ main{
     padding-top: 80px;
     padding-bottom: 40px;}
 
-h2 { 
+h1 { 
     font-family: brother-1816-printed, sans-serif;
     font-weight: 900;
     font-style: normal;
@@ -102,14 +102,14 @@ h2 {
     margin-bottom: 0;}
 
 
-h3{ 
+h2{ 
     font-size: 2em;
     margin-bottom: 0em;
     font-family: avenir-next-world, sans-serif;
     font-weight: 700;
     font-style: normal;}
 
-h4{ 
+h3{ 
     font-size: 1.8em;
     margin-bottom: 0em;
     font-family: avenir-next-world, sans-serif;
@@ -261,7 +261,7 @@ header {
     max-height: 40px;
     width: auto;}
 
-.logo-link h1 {
+.header-elements p{
     font-family: "brother-1816", sans-serif;
     font-weight: 900;
     font-style: italic;
