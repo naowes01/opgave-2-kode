@@ -48,7 +48,7 @@ nav li a{
     font-family: "brother-1816", sans-serif;
     font-weight: 900;
     font-style: italic;
-    font-size: 0.5em;}
+    font-size: 1.5em;}
 
 header img {
     max-height: 40px;
@@ -140,8 +140,25 @@ input[type=submit] {
     font-size: 1.5em;
     text-align: center;}
 
-input[type=submit]:hover {
+input[type=submit]:hover, .cta:hover {
     background-color: #011317;}
+
+.cta {
+    display: inline-block;
+    background-color: #003B49;
+    color: #EDFCFF;
+    border: none;
+    font-family: brother-1816-printed, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0.4em 1em;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;}
+
 
 /*Footer styling */ 
 
@@ -194,6 +211,104 @@ footer .footer-header {
     justify-content: flex-start;} 
 
 
+
+/*Forside - Mobile*/
+/*Hero Sektion*/
+/*Fællesskab Sektion*/
+.fællesskab {
+    padding: 2em 1.5em;}
+
+.fællesskab img {
+    max-width: 400px;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1.5em auto;
+    display: block;}
+
+/*Udsagn Sektion*/
+.udsagn {
+    padding: 5em 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;}
+
+.udsagn-1,.udsagn-2 {
+    display: flex;
+    align-items: center;
+    gap: 1em;}
+    
+.udsagn-1 {
+    flex-direction: row;}
+
+.udsagn-2 {
+    flex-direction: row-reverse;}
+
+.udsagn-1 img,
+.udsagn-2 img {
+    width: 160px;          
+    height: 160px;         
+    max-width: 100%; 
+    object-fit: cover;}  
+
+.udsagn-navn {
+    font-size: 1.2em;}
+
+.udsagn-citat {
+    font-style: italic;}
+
+.udsagn-1 .udsagn-tekst {
+    text-align: left;}
+
+.udsagn-2 .udsagn-tekst {
+    text-align: right;}
+
+/*Strategier Sektion*/
+.strategier {
+    padding: 0 1.5em;
+margin-bottom: 5em;}
+
+.strategier-intro {
+margin-bottom: 2.5em; }
+
+.strategier-bokse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    color: #EDFCFF;}
+
+.boks-1,.boks-2,.boks-3,.boks-4 {
+    padding: 0.5em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;}
+
+.boks-1,.boks-4 {
+    background-color: #003B49 }
+
+.boks-2,.boks-3 {
+    background-color: #205665 }
+
+.strategier-bokse > div p:first-child {
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-bottom: 0.1em;}
+
+
+/*Frivillig Sektion*/
+.frivillig {
+    padding: 2em 1.5em;}
+
+.frivillig p {
+    margin-bottom: 3em;
+}
+
+
+
+
 /*Kontakt os side - Mobile*/
 /*Kontaktform*/
 .message-header {
@@ -228,6 +343,7 @@ p.bemærkning {
     margin-top: 0em;
     font-weight: bold;
     font-style: italic;}
+
 
 /*Alle sider - Tablets og op*/
 @media screen and (min-width: 768px){
