@@ -455,4 +455,48 @@ button#bars {
         border-radius: 10px;
         padding-bottom: 1em;
         padding-top: 0em;}
+
+
+/* Forside - main */
+
+/* Fællesskab sektion */
+.fællesskab {
+      display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5em;
+    padding: 2em 3em;
+    align-items: stretch;}
+
+.fællesskab img {
+     flex: 1;              
+    width: 100%;
+    max-width: 500px;      
+    height: auto;         
+    object-fit: cover;  
+    border-radius: 10px; }
+
+.fællesskab-tekst {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: left;
+    justify-content: center;
+margin-bottom: 4em; }
+
+.fællesskab h2 {
+    font-size: 2.5em; } 
+
+.fællesskab p {
+    font-size: 1.2em;  
+    line-height: 2em;
+    margin-top: 0;   
+    margin-bottom: 0.5em;}
+
+.fællesskab .cta {
+    align-self: flex-start;}
+
+
+    
+
 }
