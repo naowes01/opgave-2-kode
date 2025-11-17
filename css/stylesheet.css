@@ -23,10 +23,8 @@ header nav {
         width: 100%;
         height: 100%;}
 
-
-
 nav ul{
-    list-style-type: none; /*fjerne bulletpoints fra listen*/
+    list-style-type: none; 
     gap: 1em;
     padding: 0;} 
 
@@ -75,7 +73,6 @@ header img {
     text-decoration: none;
     color: inherit;}
     
-
 button#bars {
         background-color: #EDFCFF;
         border: none;
@@ -105,7 +102,7 @@ h1 {
 
 h2{ 
     font-size: 2em;
-    margin-bottom: 0em;
+    margin-bottom: 0.5em;
     font-family: avenir-next-world, sans-serif;
     font-weight: 700;
     font-style: normal;}
@@ -123,9 +120,8 @@ body{
     color: #003B49;
     font-family: greycliff-cf, sans-serif;
     font-weight: 500;
-    font-style: normal;}
-
-
+    font-style: normal;
+    line-height: 2;}
 
 input[type=submit] {
     background-color: #003B49;
@@ -162,7 +158,6 @@ input[type=submit]:hover, .cta:hover {
 
 
 /*Footer styling */ 
-
 footer {
     background-color: #003B49;
     color: #D7F7FF;
@@ -325,83 +320,72 @@ footer .footer-header {
     font-size: 1.2em;
     margin-bottom: 0.1em;}
 
-
-
-
 /*Frivillig Sektion*/
 .frivillig {
     padding: 2em 1.5em;}
 
 .frivillig p {
-    margin-bottom: 3em;
-}
+    margin-bottom: 3em;}
 
 
 /*Om os/underside - Mobile*/
 /*Intro Sektion*/
-.underside-intro p {
-    padding: 0 1.5em;
+.underside-intro p { 
+    padding: 0 1.5em; 
     margin: 1 auto 2em auto; 
-    max-width: 800 px;  
-    box-sizing: border-box;}
-
-.underside-intro img {
+    max-width: 800 px; 
+    box-sizing: border-box;} 
+.underside-intro img { 
     width: 90%; 
     max-width: 400px; 
-    height: auto;
-    display: block;       
+    height: auto; 
+    display: block; 
     margin: 1.5em auto; 
     border-radius: 10px;}
 
+
 /*Sådan arbejder vi - Sektion*/
 .underside-arbejde {
-    padding: 2em 1.5em;
-}
+    padding: 2em 1.5em;}
 
 .underside-arbejde > div {
     position: relative;
     margin-bottom: 2em;
-    overflow: hidden; /* sikrer at billedet ikke stikker udenfor */
-    border-radius: 10px;
-}
+    overflow: hidden; 
+    border-radius: 10px;}
 
 .underside-arbejde img {
     width: 100%;
-    height: 200px;       /* fast højde på mobil */
+    height: 200px;
     object-fit: cover;
-    display: block;
-}
+    display: block;}
 
 .arbejde-boks-wrap {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 59, 73, 0.8); /* mørk overlay */
+    background-color: rgba(0, 59, 73, 0.8); 
     color: #EDFCFF;
-    padding: 1em;
-    box-sizing: border-box;
-}
+    padding: 0.1em;
+    box-sizing: border-box;}
 
 .arbejde-boks-wrap h2 {
-    font-size: 1.2em;
-    margin: 0 0 0.5em 0;
-}
+    font-size: 1.1em;
+    margin: 0 0 0.5em 0;}
 
 .arbejde-boks-wrap p {
     font-size: 1em;
-    margin: 0;
-}
+    margin-bottom: 0.5em;}
 
 /*Vores team - Sektion*/
-
 .underside-team > p {
     margin-bottom: 2.5em;
 }
 
 .team-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 2 kolonner */
+    grid-template-columns: 1fr 1fr; 
     gap: 1em;}
 
 .team-grid img {
@@ -539,6 +523,77 @@ button#bars {
         flex: none;          
         text-align: left;}
 
+/* Om Boytalk - Main - Desktop */
+.underside-intro img {
+    width: 95%;        
+    max-width: 1000px; 
+    height: 300px;     
+    object-fit: cover;
+    border-radius: 10px;}
+
+.underside-intro p {
+    max-width: 600px;  
+    margin: 0 auto 2em auto;}
+
+/* Sådan arbejder vi - sektion */
+.underside-arbejde {
+        padding: 3em 4em;}
+
+.underside-arbejde > h2 {
+        margin-bottom: 1.5em;
+        text-align: center; }
+
+    
+.underside-arbejde > div {
+        display: inline-block; 
+        vertical-align: top;
+        width: 32%; 
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-right: 1%;}
+
+
+.underside-arbejde img {
+        width: 100%;
+        height: 250px; 
+        object-fit: cover;
+        display: block;}
+
+.arbejde-boks-wrap {
+        position: absolute;
+        height: 65%;
+        width: 100%; 
+        background-color: rgba(0, 59, 73, 0.7);
+        padding: 1em;
+        box-sizing: border-box;
+        text-align: center;}
+
+.arbejde-boks-wrap h2 {
+        font-size: 1.1em;
+        margin: 0 0 0.5em 0;}
+
+.arbejde-boks-wrap p {
+        font-size: 1em;
+        margin: 0;
+        line-height: normal;}
+
+ /* Vores team - sektion */ 
+.team-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 2em; 
+        justify-items: center;}
+
+.team-grid img {
+        max-width: 150px; 
+        height: auto;}
+
+.team-grid h2,
+.team-grid p {
+        text-align: center;
+        margin: 0.5em 0 0 0;}
+  
 /* Kontakt os - Main - Desktop */
 .send-besked input[type="submit"] {
     width: auto;
