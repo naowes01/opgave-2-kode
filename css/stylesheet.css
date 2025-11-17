@@ -8,7 +8,8 @@ header {
     height: 70px;
     position: fixed;
     top: 0;
-    width: 100%;}
+    width: 100%;
+z-index: 10;}
 
 header nav {
         display: none;}
@@ -90,7 +91,7 @@ button#bars:hover{
     
 /*Main styling */
 main{
-    padding-top: 80px;
+    padding-top: 60px;
     padding-bottom: 40px;}
 
 h1 { 
@@ -214,6 +215,33 @@ footer .footer-header {
 
 /*Forside - Mobile*/
 /*Hero Sektion*/
+.hero {
+    position: relative;
+    width: 100%;}
+
+.hero-img {
+    width: 100%;
+    height: auto;       
+    display: block;}
+
+.hero-overlay {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;}
+
+.hero-overlay h1 {
+    font-size: 2.2em;
+    margin-bottom: 0;}
+
+.hero-overlay p {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 2.5em;}
+
+
 /*Fællesskab Sektion*/
 .fællesskab {
     padding: 2em 1.5em;}
@@ -266,10 +294,10 @@ footer .footer-header {
 /*Strategier Sektion*/
 .strategier {
     padding: 0 1.5em;
-margin-bottom: 5em;}
+    margin-bottom: 5em;}
 
 .strategier-intro {
-margin-bottom: 2.5em; }
+    margin-bottom: 2.5em; }
 
 .strategier-bokse {
     display: grid;
@@ -296,6 +324,8 @@ margin-bottom: 2.5em; }
     font-weight: 700;
     font-size: 1.2em;
     margin-bottom: 0.1em;}
+
+
 
 
 /*Frivillig Sektion*/
@@ -457,11 +487,35 @@ button#bars {
         padding-top: 0em;}
 
 
-/* Forside - main */
+/* Forside - main - desktop*/
+
+/* Hero Sektion */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 500px; 
+    overflow: hidden;}
+
+  .hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  transform: scale(1.4);}
+
+.hero-overlay {
+    top: 40%; 
+    left: 49%;
+    text-align: center;}
+
+.hero-overlay h1 {
+    font-size: 3em;}
+
+.hero-overlay p {
+    font-size: 1.5em;}
 
 /* Fællesskab sektion */
 .fællesskab {
-      display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5em;
     padding: 2em 3em;
@@ -496,7 +550,43 @@ margin-bottom: 4em; }
 .fællesskab .cta {
     align-self: flex-start;}
 
+/*Strategier sektion */
+.strategier {
+        display: flex;
+        align-items: start; 
+        justify-content: space-between;
+        gap: 5em;
+        padding: 2em 3em;
+        text-align: left;}
 
+.strategier-tekst {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;               
+        text-align: left;
+        justify-content: center;}
+
+.strategier-tekst h2 {
+        font-size: 2.5em;}
+
+.strategier-intro {
+        font-size: 1.2em;
+        line-height: 2em;
+        margin: 0;
+        max-width: 500px;}
     
+.strategier-bokse {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 1.2em;}
+
+.boks-1, .boks-2, .boks-3, .boks-4 {
+    padding: 0.2em;
+    border-radius: 10px;
+    text-align: center;}
+
+
 
 }
