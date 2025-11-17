@@ -337,7 +337,84 @@ footer .footer-header {
 }
 
 
+/*Om os/underside - Mobile*/
+/*Intro Sektion*/
+.underside-intro p {
+    padding: 0 1.5em;
+    margin: 1 auto 2em auto; 
+    max-width: 800 px;  
+    box-sizing: border-box;}
 
+.underside-intro img {
+    width: 90%; 
+    max-width: 400px; 
+    height: auto;
+    display: block;       
+    margin: 1.5em auto; 
+    border-radius: 10px;}
+
+/*Sådan arbejder vi - Sektion*/
+.underside-arbejde {
+    padding: 2em 1.5em;
+}
+
+.underside-arbejde > div {
+    position: relative;
+    margin-bottom: 2em;
+    overflow: hidden; /* sikrer at billedet ikke stikker udenfor */
+    border-radius: 10px;
+}
+
+.underside-arbejde img {
+    width: 100%;
+    height: 200px;       /* fast højde på mobil */
+    object-fit: cover;
+    display: block;
+}
+
+.arbejde-boks-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 59, 73, 0.8); /* mørk overlay */
+    color: #EDFCFF;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.arbejde-boks-wrap h2 {
+    font-size: 1.2em;
+    margin: 0 0 0.5em 0;
+}
+
+.arbejde-boks-wrap p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/*Vores team - Sektion*/
+
+.underside-team > p {
+    margin-bottom: 2.5em;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 kolonner */
+    gap: 1em;}
+
+.team-grid img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;}
+
+.team-grid h2 {
+    font-size: 1.2em;}
+
+.team-grid p {
+    font-size: 0.95em;}
 
 /*Kontakt os side - Mobile*/
 /*Kontaktform*/
@@ -462,7 +539,7 @@ button#bars {
         flex: none;          
         text-align: left;}
 
-/* Kontakt os - Main  */
+/* Kontakt os - Main - Desktop */
 .send-besked input[type="submit"] {
     width: auto;
     padding: 0.2em 1.5em;}
@@ -488,7 +565,6 @@ button#bars {
 
 
 /* Forside - main - desktop*/
-
 /* Hero Sektion */
   .hero {
     position: relative;
@@ -512,6 +588,26 @@ button#bars {
 
 .hero-overlay p {
     font-size: 1.5em;}
+
+/* Udsagn sektion */
+.udsagn-tekst {
+        display: inline-block; 
+        border: 2px solid #003B49;
+        border-radius: 10px;
+        padding: 0.1em 0.9em;}
+
+.udsagn {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;  
+        padding-top: 2em; 
+        padding-bottom: 2em;
+        margin: 0;}
+
+ 
+.udsagn-2 .udsagn-tekst {
+        margin-left: auto;}
+
 
 /* Fællesskab sektion */
 .fællesskab {
