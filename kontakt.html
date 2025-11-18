@@ -15,104 +15,98 @@
 <body>
     <header>
         <div class="header-elements">
+            <div class="logo-elements">
+                <a href="index.html" class="logo-link">
+                <img src="img/logo.png" alt="boytalk-logo">
+                <p>BOYTALK</p></a>
+            </div>
+                <button id="bars" aria-label="Åbn menu">
+                <i class="fa-solid fa-bars"></i>
+                </button>
+        </div>
         
-        <div class="logo-elements">
-        <a href="index.html" class="logo-link">
-        <img src="img/logo.png" alt="boytalk-logo">
-        <p>BOYTALK</p>
-        </a>
-        </div>
-
-        <button id="bars" aria-label="Åbn menu">
-        <i class="fa-solid fa-bars"></i>
-        </button>
-        </div>
-
         <nav>
-        <ul>
-        <li><a href="underside.html">Om Boytalk</a></li>
-        <li><a href="kontakt.html">Snak med os</a></li>
-        <li><a href="#">Fællesskaber</a></li>
-        <li><a href="#">Bliv Frivillig</a></li>
-        </ul>
-        </nav>
-        
+            <ul>
+                <li><a href="underside.html">Om Boytalk</a></li>
+                <li><a href="kontakt.html">Snak med os</a></li>
+                <li><a href="#">Fællesskaber</a></li>
+                <li><a href="#">Bliv Frivillig</a></li>
+            </ul>
+        </nav>     
     </header>
 
-<main class="kontakt-os">
 
-    <section class="kontakt-intro">
-        <h1>Kontakt os</h1>
-        <p> Har du noget på hjertet? <br>Her har du nogen at tale med, vi lytter uanset hvad.</p>
-    </section>
+    <main class="kontakt-os">
 
-<div class="kontakt-wrap">
-    <section class="send-besked">
-        <h2 class="message-header">Send en besked</h2>
-        <form>
-            <label for="navn">Navn</label> <!--'for' knyttes til <input> med id af samme navn -->
-			<input id="navn" type="text" required autocomplete="name">
-            
-            <label for="mail">E-mail</label>
-			<input id="mail" type="email" required autocomplete="email">
-
-            <label for="besked">Besked</label>
-			<textarea name="besked" id="besked" rows="8"required autocomplete="besked"></textarea> <!--Textarea giver mulighed for at skrive en større besked. Størrelse defineres ved brug af rows og cols-->
-        </form>
-
-        <input type="submit" name="submit" value="SEND">
-    </section>
-
-    <section class="kontakt-info">
-        <h2 class="ring-header">Ring til os</h2>
-        <p class="telefonnummer"> Telefon: +45 11 22 33 44 
-            <br>Akuttelefon: +45 11 22 33 44 </p>
-
-        <p class="åbningstider">Åbningstider:</p>
-           <p>Man-Fre: 08:00-20:00
-            <br>Lør: 10:00-16:00
-            <br>Søn: 10:00-14:00</p> 
+        <section class="kontakt-intro">
+            <h1>Kontakt os</h1>
+            <p> Har du noget på hjertet? <br>Her har du nogen at tale med, vi lytter uanset hvad.</p>
+        </section>
         
-        <p class="bemærkning">Bemærkning: Akuttelefonen er altid åben</p>
-    </section>
-</div>
+        <div class="kontakt-wrap">
+            <section class="send-besked">
+                <h2 class="message-header">Send en besked</h2>
+
+                <form>
+                    <label for="navn">Navn</label> <!--'for' knyttes til <input> med id af samme navn -->
+			        <input id="navn" type="text" required autocomplete="name">
+            
+                    <label for="mail">E-mail</label>
+			        <input id="mail" type="email" required autocomplete="email">
+
+                    <label for="besked">Besked</label>
+			        <textarea name="besked" id="besked" rows="8"required autocomplete="besked"></textarea> <!--Textarea giver mulighed for at skrive en større besked. Størrelse defineres ved brug af rows og cols-->
+                </form>
+
+                <input type="submit" name="submit" value="SEND">
+            </section>
+
+            <section class="kontakt-info">
+               <h2 class="ring-header">Ring til os</h2>
+               <p class="telefonnummer"> Telefon: <a href="tel:+4511223344">+45 11 22 33 44</a><br>Akuttelefon: <a href="tel:+4511223344">+45 11 22 33 44</a>
+
+               <p class="åbningstider">Åbningstider:</p>
+               <p>Man-Fre: 08:00-20:00
+               <br>Lør: 10:00-16:00
+               <br>Søn: 10:00-14:00</p> 
+        
+               <p class="bemærkning">Bemærkning: Akuttelefonen er altid åben</p>
+            </section>
+        </div>
     </main>
 
 <footer>
+        <div class="footer-content">
+            <section class="footer-section">
+                <h3 class="footer-header">Snak med os</h3>
+                <p>Telefon: +45 11 22 33 44 <br>Akuttelefon: +45 11 22 33 44</p>
+                <div class="footer-some">
+                    <a href="#">
+                    <img class="logo-instagram" src="img/logo-insta.png" alt="Instagram"></a>
 
-<div class="footer-content">
-    <section class="footer-section">
-        <h3 class="footer-header">Snak med os</h3>
-        <p>Telefon: +45 11 22 33 44 <br>Akuttelefon: +45 11 22 33 44</p>
-        <div class="footer-some">
-         <a href="#">
-        <img class="logo-instagram" src="img/logo-insta.png" alt="Instagram">
-        </a>
+                    <a href="#">
+                    <img class="logo-facebook" src="img/logo-fb.png" alt="Facebook"></a>
+                </div>
+            </section>
 
-        <a href="#">
-        <img class="logo-facebook" src="img/logo-fb.png" alt="Facebook"></a>
-    </div>
-    </section>
-
-    <section class="footer-section">
-        <h3 class="footer-header">Åbningstider</h3>
-        <p>
-            Man-Fre: 08:00-20:00 <br>
-            Lør: 10:00-16:00 <br>
-            Søn: 10:00-14:00</p>
-        <p class="note">Akuttelefon er altid åben</p>
-    </section>
-</div>
+            <section class="footer-section">
+                <h3 class="footer-header">Åbningstider</h3>
+                
+                <p>
+                Man-Fre: 08:00-20:00 <br>
+                Lør: 10:00-16:00 <br>
+                Søn: 10:00-14:00</p>
+                
+                <p class="note">Akuttelefon er altid åben</p>
+            </section>
+        </div>
     
-    <div class="footer-logo">
-    <a href="index.html">
-        <img src="img/logo.png" alt="Boytalk Logo"></a>
-        <p>BOYTALK</p>
-        
-    
-    </div>
-</div>
-</footer>
+        <div class="footer-logo">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Boytalk Logo"></a>
+                <p>BOYTALK</p>
+        </div>
+    </footer>
 
 </body>
 </html>
